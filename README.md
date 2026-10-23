@@ -41,28 +41,5 @@ On macOS/Linux replace `.\mvnw.cmd` with `./mvnw`. Run from the project folder s
 
 Try an empty title or a year outside 1–2100 to see validation. Missing record URLs return HTTP 404.
 
-## Understand the code
-
-| File / directory | Purpose |
-| --- | --- |
-| `pom.xml` | Java version and Spring Boot, MVC, Thymeleaf, JPA, validation, H2, and test dependencies. |
-| `src/main/java/com/example/library/` | Application entry point, book model, database repository, and web controller. |
-| `src/main/resources/templates/books/` | Thymeleaf catalogue and add/edit forms rendered by the server. |
-| `src/main/resources/static/` | Local styles and the delete confirmation script. |
-| `src/main/resources/application.properties` | Local server and persistent database settings. |
-| `src/test/java/` | Integration tests for CRUD, form validation, and missing records. |
-| `doc/` | Screenshots, evidence notes, and the complete two-student workflow. |
-
-Request flow: **browser → controller → service → repository → H2 database**. The controller supplies the result to a **Thymeleaf page → browser**. An entity maps a Java object to a database row. Spring Data implements repository methods. The service handles database transactions. The controller decides which operation and page to use. Thymeleaf fills HTML with model values.
-
-The assignment offers [Spring's Vaadin CRUD guide](https://spring.io/guides/gs/crud-with-vaadin/) as an optional tutorial. This implementation uses Spring MVC and Thymeleaf for its interface, with the same basic Java/JPA CRUD learning goals.
-
-## Pair work and submission
-
-Read **[doc/PAIR-WORK-GUIDE.md](doc/PAIR-WORK-GUIDE.md)** for exact roles, independent repositories, both reciprocal pull requests, example changes, review steps, screenshots, and Platon submission.
-
-Each student must have their own course account with their own Student ID in the username, their own public repository, and their own running app. Both repositories must receive a real commit and pull request from the other student. This initial project alone does not complete the collaboration requirement.
-
-**Deadline from the assignment: Sunday, 25 October 2026, 17:00.** Upload the running-app screenshot and a GitHub history screenshot showing both students to Platon after the partner contribution is merged. Keep extra CRUD and startup screenshots committed in `doc/`.
-
-AI assistance was used to prepare this starter implementation and documentation. Each student should understand it, run it independently, and make their own real contribution.
+<img width="1280" height="718" alt="photo_2026-10-23_15-17-46" src="https://github.com/user-attachments/assets/f53d7728-0fa2-4135-8976-9d192f6b556c" />
+<img width="1791" height="1078" alt="Screenshot 2026-10-19 204658" src="https://github.com/user-attachments/assets/024ae66d-8c76-4600-9962-31f763ac2eba" />
